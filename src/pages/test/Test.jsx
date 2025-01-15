@@ -4,6 +4,6 @@ import { NormalPage } from '../../components/NormalPage'
 
 export const Test = () => {
   return (
-    <NormalPage body={TestBody} />
+    <NormalPage variable={TestBody} />
   )
 }

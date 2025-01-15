@@ -1,10 +1,10 @@
 import React from 'react'
 
-export const NormalPage = (BodyComponent) => {
+export const NormalPage = (variable) => {
   return (
     <>
     <div>Header</div>
-    <BodyComponent />
+    <variable />
     <div>Footer</div>
     </>
   )
