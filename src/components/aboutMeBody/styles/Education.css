@@ -1,0 +1,35 @@
+.experience-educationContainer{
+    display: flex; /* Flexbox para organizar las columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+    align-items: flex-start; /* Alineación vertical al inicio */
+    background-color: #37204f;
+    color: #fff;
+    height: 746px;
+    gap: 1rem;
+    position: relative; /* Posición relativa para que el dividor se posicione correctamente */
+}
+
+.experienceContainer, .educationContainer {
+    width: 48%; /* Ancho del 48% para cada columna */
+    padding: 50px;
+}
+
+.divider {
+    width: 5px;
+    background-color: #fff;
+    height: 564px;
+    position: absolute;
+    top: 123px;
+    bottom: 0;
+    left: 50%; /* Coloca la línea exactamente en el centro horizontal */
+    transform: translateX(-50%); /* Centra la línea respecto a sí misma */
+  }
+
+  .educationItems, .experienceItems {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 24px;
+    padding-left: 15%;
+    text-align: left;
+  }

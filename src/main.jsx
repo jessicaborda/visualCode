@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import App from "./app";
 import About from "./pages/about";
 import { Test } from "./pages/test/Test";
+import "./styles.css";
 
 const root = document.getElementById("root");
 

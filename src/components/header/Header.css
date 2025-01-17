@@ -1,0 +1,12 @@
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 98%;
+    height: 5vh; /* 5% de la pantalla */
+    padding: 0 2rem;
+    background-color: #423e37; /* Color de fondo */
+    color: white;
+}
+
