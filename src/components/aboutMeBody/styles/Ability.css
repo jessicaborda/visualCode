@@ -1,18 +1,17 @@
-.abilityContainer{
-    height: 619px;
-    background-color: #37204f;
-    color: white;
+.abilityContainer {
+  height: 619px;
+  background-color: #37204f;
+  color: white;
 }
 
 .abilityContainer h2 {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
-.cardsContainer{
-    display: flex;
-    justify-content: center; /* Centra las cards horizontalmente */
-    align-items: flex-start; /* Alinea las cards en la parte superior */
-    gap: 2rem; /* Espacio entre las cards */
-    position: relative;
+.cardsContainer {
+  display: flex;
+  justify-content: center; /* Centra las cards horizontalmente */
+  align-items: flex-start; /* Alinea las cards en la parte superior */
+  gap: 2rem; /* Espacio entre las cards */
+  position: relative;
 }
-

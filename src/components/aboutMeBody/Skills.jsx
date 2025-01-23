@@ -1,53 +1,76 @@
-import React from 'react'
-import './styles/Skills.css'
-import { IconComponent } from '../iconComponent'
+import './styles/Skills.css';
+import { IconComponent } from '../iconComponent';
 
 export const Skills = () => {
-
-    const styles = { 
-        width: '90px', 
-        height: '90px',
-      };
+  const styles = {
+    width: '90px',
+    height: '90px',
+  };
 
   return (
     <>
-        <div className='skillsContainer'>
-            <h2>Skills</h2>
-            <p className='skillsDescription'>Durante mi transición al desarrollo web, he aprendido a usar tecnologías como React, JavaScript, HTML, CSS, y Figma, con el objetivo de diseñar interfaces digitales que no solo sean visualmente atractivas, sino también funcionales y fáciles de usar. Mi enfoque está siempre en la experiencia del usuario, aplicando principios de diseño que aprendí en la arquitectura y adaptándolos al mundo digital.</p>
-            
-            <div className='skillsIcons'>
-                <IconComponent 
-                iconPath='src/assets/icon_html.svg' 
-                altText='menuIcon' 
-                style={styles}
-                />
+      <div className="skillsContainer">
+        <h2>Skills</h2>
+        <p className="skillsDescription">
+          Durante mi transición al desarrollo web, he aprendido a usar
+          tecnologías como React, JavaScript, HTML, CSS, y Figma, con el
+          objetivo de diseñar interfaces digitales que no solo sean visualmente
+          atractivas, sino también funcionales y fáciles de usar. Mi enfoque
+          está siempre en la experiencia del usuario, aplicando principios de
+          diseño que aprendí en la arquitectura y adaptándolos al mundo digital.
+        </p>
 
-                <IconComponent 
-                iconPath='src/assets/icon_css.svg' 
-                altText='menuIcon' 
-                style={styles}
-                />
+        <div className="skillsIcons">
+          <IconComponent
+            iconPath="src/assets/icon_html.svg"
+            altText="htmlIcon"
+            title="HTML"
+            style={styles}
+          />
 
-                <IconComponent 
-                iconPath='src/assets/icon_javascript.svg' 
-                altText='menuIcon' 
-                style={styles}
-                />
+          <IconComponent
+            iconPath="src/assets/icon_css.svg"
+            altText="cssIcon"
+            title="CSS"
+            style={styles}
+          />
 
-                <IconComponent 
-                iconPath='src/assets/icon_react.svg' 
-                altText='menuIcon' 
-                style={styles}
-                />
+          <IconComponent
+            iconPath="src/assets/icon_javascript.svg"
+            altText="javascriptIcon"
+            title="JavaScript"
+            style={styles}
+          />
 
-                <IconComponent 
-                iconPath='src/assets/icon_figma.svg' 
-                altText='menuIcon' 
-                style={styles}
-                />
-            </div>
+          <IconComponent
+            iconPath="src/assets/icon_react.svg"
+            altText="reactIcon"
+            title="React"
+            style={styles}
+          />
 
+          <IconComponent
+            iconPath="src/assets/icon_figma.svg"
+            altText="figmaIcon"
+            title="Figma"
+            style={styles}
+          />
+
+          <IconComponent
+            iconPath="src/assets/icon_sketchup.svg"
+            altText="figmaIcon"
+            title="SketchUp"
+            style={styles}
+          />
+
+          <IconComponent
+            iconPath="src/assets/icon_autocad.svg"
+            altText="figmaIcon"
+            title="AutoCAD"
+            style={styles}
+          />
         </div>
+      </div>
     </>
-  )
-}
+  );
+};

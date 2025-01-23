@@ -1,16 +1,16 @@
-import React from 'react'
-import { IconComponent } from './iconComponent'
+import PropTypes from 'prop-types';
+import { IconComponent } from './iconComponent';
 
-export const CardComponent = ({ 
-    iconPath, 
-    title, 
-    description, 
-    style = {}, 
-    iconStyle = {}, 
-    titleStyle = {}, 
-    descriptionStyle = {} 
-  }) => {
-    const defaultStyle = {
+export const CardComponent = ({
+  iconPath,
+  title,
+  description,
+  style = {},
+  iconStyle = {},
+  titleStyle = {},
+  descriptionStyle = {},
+}) => {
+  const defaultStyle = {
     card: {
       borderRadius: '15px',
       width: '273px',
@@ -33,13 +33,26 @@ export const CardComponent = ({
   };
   return (
     <div style={{ ...defaultStyle.card, ...style }}>
-      <IconComponent 
-        iconPath={iconPath} 
-        altText={title} 
-        style={{ width: '50px', height: '50px', ...iconStyle }} 
+      <IconComponent
+        iconPath={iconPath}
+        altText={title}
+        style={{ width: '50px', height: '50px', ...iconStyle }}
       />
       <h3 style={{ ...defaultStyle.title, ...titleStyle }}>{title}</h3>
-      <p style={{ ...defaultStyle.description, ...descriptionStyle }}>{description}</p>
+      <p style={{ ...defaultStyle.description, ...descriptionStyle }}>
+        {description}
+      </p>
     </div>
-  )
-}
+  );
+};
+
+// Props:
+CardComponent.propTypes = {
+  iconPath: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  style: PropTypes.object,
+  iconStyle: PropTypes.object,
+  titleStyle: PropTypes.object,
+  descriptionStyle: PropTypes.object,
+};

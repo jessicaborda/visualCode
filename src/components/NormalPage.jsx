@@ -1,11 +1,9 @@
-import React from 'react'
-
-export const NormalPage = (variable) => {
+export const NormalPage = () => {
   return (
     <>
-    <div>Header</div>
-    <variable />
-    <div>Footer</div>
+      <div>Header</div>
+      <variable />
+      <div>Footer</div>
     </>
-  )
-}
+  );
+};

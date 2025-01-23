@@ -1,12 +1,28 @@
-.headerContainer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 98%;
-    height: 5vh; /* 5% de la pantalla */
-    padding: 0 2rem;
-    background-color: #423e37; /* Color de fondo */
-    color: white;
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 98%;
+  height: 5vh; /* 5% de la pantalla */
+  padding: 0 2rem;
+  background-color: #423e37; /* Color de fondo */
+  z-index: 1000;
 }
 
+.navbarLinks {
+  display: flex;
+  justify-content: flex-end; /* Alinea los enlaces a la derecha */
+  align-items: center;
+  padding-right: 2rem;
+  margin-left: auto; /* Empuja el contenedor hacia la derecha */
+  gap: 2rem; /* Espacio entre los enlaces */
+}
+
+.navbarLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 200;
+  transition: all 0.3s ease;
+}
