@@ -1,8 +1,9 @@
 import js from '@eslint/js';
-import globals from 'globals';
+import importPlugin from 'eslint-plugin-import'; // Importar el plugin de importación
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import globals from 'globals';
 
 export default [
   { ignores: ['dist'] },
@@ -22,6 +23,7 @@ export default [
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      import: importPlugin, // Asegúrate de que este plugin esté en la sección de plugins
     },
     rules: {
       ...js.configs.recommended.rules,
@@ -32,6 +34,22 @@ export default [
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
+      ],
+      // Regla para ordenar los imports
+      'import/order': [
+        'error',
+        {
+          groups: [
+            ['builtin', 'external'],
+            ['internal', 'sibling', 'parent'],
+          ],
+          alphabetize: { order: 'asc', caseInsensitive: true },
+        },
+      ],
+      // Espacios entre imports y funciones
+      'padding-line-between-statements': [
+        'error',
+        { prev: 'import', next: 'function', blankLine: 'always' },
       ],
     },
   },

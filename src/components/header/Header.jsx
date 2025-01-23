@@ -1,6 +1,6 @@
-import { HeaderLogo } from './HeaderLogo';
-import { HeaderLinks } from './HeaderLinks';
 import { HeaderDropdownMenu } from './HeaderDropdownMenu';
+import { HeaderLinks } from './HeaderLinks';
+import { HeaderLogo } from './HeaderLogo';
 import './Header.css';
 
 export const Header = () => {
