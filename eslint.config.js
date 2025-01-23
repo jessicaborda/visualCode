@@ -35,7 +35,7 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-      // Regla para ordenar los imports
+      // Ordenar los imports
       'import/order': [
         'error',
         {
@@ -46,10 +46,12 @@ export default [
           alphabetize: { order: 'asc', caseInsensitive: true },
         },
       ],
-      // Espacios entre imports y funciones
+      // Espacios entre los imports y otras declaraciones
       'padding-line-between-statements': [
         'error',
-        { prev: 'import', next: 'function', blankLine: 'always' },
+        { prev: 'import', next: 'block', blankLine: 'always' }, // Espacio después de los imports
+        { prev: 'import', next: 'function', blankLine: 'always' }, // Espacio entre los imports y funciones
+        { prev: 'function', next: 'function', blankLine: 'always' }, // Espacio entre funciones
       ],
     },
   },
