@@ -1,4 +1,4 @@
-import { InfoRowComponent } from '../infoRowComponent';
+import { InfoRowComponent } from '../../injectors/infoRowComponent';
 import './styles/AboutMe.css';
 
 export const AboutMe = () => {

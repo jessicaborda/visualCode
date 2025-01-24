@@ -1,4 +1,4 @@
-import { TextColumn } from '../textColumn';
+import { TextColumn } from '../../textColumn';
 import './styles/Education.css';
 
 export const Education = () => {

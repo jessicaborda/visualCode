@@ -1,0 +1,27 @@
+.container {
+    position: relative; /* Contenedor principal para posicionar elementos */
+    height: 619px;
+    background: #37204f; /* Define el color de fondo como una capa base */
+    color: white;
+    overflow: hidden; /* Asegúrate de que el SVG no se salga del contenedor */
+    overflow: hidden; /* Para que el SVG no desborde el contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {
+    position: relative; /* Posiciona el contenido sobre el SVG */
+    z-index: 1; /* Asegura que las cards estén sobre el SVG */
+}
+
+.fondGradiant {
+    position: absolute;
+    top: 50%; /* Centra el SVG verticalmente */
+    left: 50%; /* Centra el SVG horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el punto de referencia para el centro */
+    width: 100%; /* Escala el SVG al ancho del contenedor */
+    height: auto; /* Mantén la proporción del SVG */
+    z-index: -1; /* Envía el SVG al fondo */
+    pointer-events: none; /* Opcional: evita que el SVG bloquee interacciones del usuario */
+  }

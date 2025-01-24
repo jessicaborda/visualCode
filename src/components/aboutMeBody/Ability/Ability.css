@@ -1,11 +1,14 @@
 .abilityContainer {
   height: 619px;
-  background-color: #37204f;
-  color: white;
+  background: var(--color-section);
+  color: var(--color-text);
+  overflow: hidden;
 }
 
 .abilityContainer h2 {
   padding: 60px 0;
+  position: relative; /* Asegura que el título también esté sobre el SVG */
+  z-index: 1;
 }
 
 .cardsContainer {
@@ -14,4 +17,5 @@
   align-items: flex-start; /* Alinea las cards en la parte superior */
   gap: 2rem; /* Espacio entre las cards */
   position: relative;
+  z-index: 1;
 }

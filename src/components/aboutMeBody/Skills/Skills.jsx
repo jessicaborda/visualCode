@@ -1,5 +1,5 @@
 import './styles/Skills.css';
-import { IconComponent } from '../iconComponent';
+import { IconComponent } from '../../iconComponent';
 
 export const Skills = () => {
   const styles = {
@@ -22,49 +22,49 @@ export const Skills = () => {
 
         <div className="skillsIcons">
           <IconComponent
-            iconPath="src/assets/icon_html.svg"
+            iconPath="public/assets/about/icon_html.svg"
             altText="htmlIcon"
             title="HTML"
             style={styles}
           />
 
           <IconComponent
-            iconPath="src/assets/icon_css.svg"
+            iconPath="public/assets/about/icon_css.svg"
             altText="cssIcon"
             title="CSS"
             style={styles}
           />
 
           <IconComponent
-            iconPath="src/assets/icon_javascript.svg"
+            iconPath="public/assets/about/icon_javascript.svg"
             altText="javascriptIcon"
             title="JavaScript"
             style={styles}
           />
 
           <IconComponent
-            iconPath="src/assets/icon_react.svg"
+            iconPath="public/assets/about/icon_react.svg"
             altText="reactIcon"
             title="React"
             style={styles}
           />
 
           <IconComponent
-            iconPath="src/assets/icon_figma.svg"
+            iconPath="public/assets/about/icon_figma.svg"
             altText="figmaIcon"
             title="Figma"
             style={styles}
           />
 
           <IconComponent
-            iconPath="src/assets/icon_sketchup.svg"
+            iconPath="public/assets/about/icon_sketchup.svg"
             altText="figmaIcon"
             title="SketchUp"
             style={styles}
           />
 
           <IconComponent
-            iconPath="src/assets/icon_autocad.svg"
+            iconPath="public/assets/about/icon_autocad.svg"
             altText="figmaIcon"
             title="AutoCAD"
             style={styles}

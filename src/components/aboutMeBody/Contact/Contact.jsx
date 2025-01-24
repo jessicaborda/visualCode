@@ -1,5 +1,6 @@
 import './styles/Contact.css';
-import { IconComponent } from '../iconComponent';
+import { IconComponent } from '../../iconComponent';
+import { SvgComponent } from '../../svgComponent';
 
 const ContactForm = () => {
   return (
@@ -31,27 +32,27 @@ const ContactSocialIcons = () => {
     <>
       <div className="socialIconsContainer">
         <IconComponent
-          iconPath="src/assets/icon_github_contact.svg"
+          iconPath="public/assets/about/icon_github_contact.svg"
           altText="githubIcon"
           style={styles}
         />
         <IconComponent
-          iconPath="src/assets/icon_linkedin_contact.svg"
+          iconPath="public/assets/about/icon_linkedin_contact.svg"
           altText="linkedinIcon"
           style={styles}
         />
         <IconComponent
-          iconPath="src/assets/icon_gmail_contact.svg"
+          iconPath="public/assets/about/icon_gmail_contact.svg"
           altText="gmailIcon"
           style={styles}
         />
         <IconComponent
-          iconPath="src/assets/icon_instagram_contact.svg"
+          iconPath="public/assets/about/icon_instagram_contact.svg"
           altText="instagramIcon"
           style={styles}
         />
         <IconComponent
-          iconPath="src/assets/icon_facebook_contact.svg"
+          iconPath="public/assets/about/icon_facebook_contact.svg"
           altText="facebookIcon"
           style={styles}
         />
@@ -64,16 +65,21 @@ export const Contact = () => {
   return (
     <>
       <div className="contactFormContainer">
-        <h2>Contáctame</h2>
-        <p>
-          ¡Gracias por visitar mi portafolio! Estoy en constante aprendizaje y
-          emocionada por seguir adquiriendo más habilidades en el desarrollo de
-          software. Siempre estoy abierta a nuevas oportunidades, proyectos
-          creativos y colaboraciones que permitan desarrollar mi creciente
-          pasión por la tecnología. Si tienes alguna pregunta, una idea en mente
-          o simplemente quieres contactarme, no dudes en escribirme. ¡Será un
-          placer conversar contigo!
-        </p>
+        <div className="fondGradiant">
+          <SvgComponent />
+        </div>
+        <div className="contactText">
+          <h2>Contáctame</h2>
+          <p>
+            ¡Gracias por visitar mi portafolio! Estoy en constante aprendizaje y
+            emocionada por seguir adquiriendo más habilidades en el desarrollo
+            de software. Siempre estoy abierta a nuevas oportunidades, proyectos
+            creativos y colaboraciones que permitan desarrollar mi creciente
+            pasión por la tecnología. Si tienes alguna pregunta, una idea en
+            mente o simplemente quieres contactarme, no dudes en escribirme.
+            ¡Será un placer conversar contigo!
+          </p>
+        </div>
         <div className="contactContentContainer">
           <div className="contactContainer">
             <ContactForm />

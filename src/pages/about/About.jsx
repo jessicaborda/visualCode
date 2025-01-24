@@ -8,6 +8,7 @@ import {
 } from '../../components/aboutMeBody';
 
 import { Footer } from '../../components/footer/Footer';
+
 export const About = () => {
   return (
     <>

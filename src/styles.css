@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
 
+:root{
+  --color-secondary: #5d2e8c;
+  --color-section: #37204f;
+  --color-primary: #ffc800;
+  --color-text: #fff;
+  --color-darkgray: #423e37;
+  --color-mediumgray: #5b5750;
+  --color-lightgray: #a7a2a9;
+  --border-button: 25px;
+  --border-normal: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +19,7 @@
 }
 
 h1 {
-  color: #ffc800;
+  color: var(--color-primary);
   text-align: center;
   font-size: 50px;
   font-weight: 700;
@@ -15,28 +27,28 @@ h1 {
 }
 
 h2 {
-  color: #ffc800;
+  color: var(--color-primary);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
 }
 
 h3 {
-  color: #ffc800;
+  color: var(--color-primary);
   font-size: 20px;
   font-weight: 700;
   line-height: 5px;
 }
 
 h4 {
-  color: #a7a2a9;
+  color: var(--color-lightgray);
   font-size: 20px;
   font-weight: 600;
   line-height: 5px;
 }
 
 h5 {
-  color: #fff;
+  color: var(--color-text);
   font-size: 16px;
   font-weight: 300;
   line-height: 25px;
@@ -45,17 +57,17 @@ h5 {
 button {
   width: 140px;
   height: 50px;
-  background-color: #ffc800;
-  border-radius: 25px;
-  border: solid 2px #0000;
-  color: #fff;
+  background-color: var(--color-primary);
+  border-radius: var(--border-button);
+  border: solid 2px var(--color-darkgray);
+  color: var(--color-text);
   margin-top: 24px;
   cursor: pointer;
   display: block;
 }
 
 p {
-  color: #fff;
+  color: var(--color-text);
   font-size: 16px;
   font-weight: 300;
 }

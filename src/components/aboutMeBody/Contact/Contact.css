@@ -1,11 +1,16 @@
 .contactFormContainer {
-  background-color: #5d2e8c;
-  color: #fff;
-  height: 950px;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+}
+
+.fondGradiant {
+  position: absolute;
 }
 
 .contactFormContainer p {
@@ -19,9 +24,14 @@
   text-align: center;
 }
 
+.contactText {
+  z-index: 3;
+}
+
 .contactContentContainer {
   display: flex;
   flex-direction: row;
+  z-index: 3;
 }
 
 .contactContainer {
@@ -35,8 +45,9 @@
 .contactForm {
   width: 876px;
   height: 549px;
-  background-color: #423e37;
+  background-color: var(--color-darkgray);
   margin-left: 40px;
+  border-radius: var(--border-normal);
 }
 
 .contactSocialIconsContainer {
@@ -62,51 +73,51 @@
 .inputForm_name {
   width: 350px;
   height: 50px;
-  background-color: #a7a2a9;
+  background-color: var(--color-lightgray);
   margin-right: 24px;
   margin-bottom: 12px;
   margin-top: 30px;
   margin-left: 30px;
   border: none;
-  border-radius: 15px;
+  border-radius: var(--border-normal);
   padding-left: 29px;
 }
 
 .inputForm_email {
   width: 384px;
   height: 50px;
-  background-color: #a7a2a9;
+  background-color: var(--color-lightgray);
   margin-bottom: 12px;
   margin-top: 12px;
   border: none;
-  border-radius: 15px;
+  border-radius: var(--border-normal);
   padding-left: 29px;
 }
 
 .inputForm_asunto {
   width: 787px;
   height: 50px;
-  background-color: #a7a2a9;
+  background-color: var(--color-lightgray);
   margin-right: 12px;
   margin-bottom: 12px;
   margin-top: 12px;
   margin-left: 30px;
   border: none;
-  border-radius: 15px;
+  border-radius: var(--border-normal);
   padding-left: 29px;
 }
 
 .inputForm_message {
   width: 787px;
   height: 253px;
-  background-color: #a7a2a9;
+  background-color: var(--color-lightgray);
   margin-right: 12px;
   margin-left: 30px;
   margin-top: 12px;
   border: none;
   resize: none;
   overflow: auto;
-  border-radius: 15px;
+  border-radius: var(--border-normal);
   padding-left: 29px;
   padding-top: 19px;
 }

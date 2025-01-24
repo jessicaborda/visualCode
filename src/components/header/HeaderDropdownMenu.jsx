@@ -10,7 +10,7 @@ export const HeaderDropdownMenu = () => {
     <>
       <div className="dropdownMenu">
         <IconComponent
-          iconPath="src/assets/burgerMenuIcon.svg"
+          iconPath="public/assets/about/burgerMenuIcon.svg"
           altText="menuIcon"
           style={styles}
         />

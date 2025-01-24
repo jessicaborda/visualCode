@@ -2,9 +2,9 @@
   display: flex; /* Flexbox para organizar las columnas */
   justify-content: space-between; /* Espacio entre las columnas */
   align-items: flex-start; /* Alineación vertical al inicio */
-  background-color: #37204f;
-  color: #fff;
-  height: 746px;
+  background-color: var(--color-section);
+  color: var(--color-text);
+  height: 800px;
   gap: 1rem;
   position: relative; /* Posición relativa para que el dividor se posicione correctamente */
 }
@@ -17,8 +17,8 @@
 
 .divider {
   width: 5px;
-  background-color: #fff;
-  height: 564px;
+  background-color: var(--color-text);
+  height: 600px;
   position: absolute;
   top: 123px;
   bottom: 0;
