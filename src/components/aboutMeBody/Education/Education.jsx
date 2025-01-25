@@ -1,5 +1,5 @@
-import { TextColumn } from '../../textColumn';
-import './styles/Education.css';
+import { TextColumn } from '../../injectors/textColumn.jsx';
+import './Education.css';
 
 export const Education = () => {
   return (

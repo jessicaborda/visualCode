@@ -1,5 +1,5 @@
 import { TestBody } from './TestBody';
-import { NormalPage } from '../../components/NormalPage';
+import { NormalPage } from '../test/NormalPage.jsx';
 
 export const Test = () => {
   return <NormalPage variable={TestBody} />;

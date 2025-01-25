@@ -1,4 +1,3 @@
-import { Header } from '../../components';
 import {
   AboutMe,
   Ability,
@@ -6,8 +5,8 @@ import {
   Education,
   Contact,
 } from '../../components/aboutMeBody';
-
-import { Footer } from '../../components/footer/Footer';
+import { Footer } from '../../components/footer';
+import { Header } from '../../components/header';
 
 export const About = () => {
   return (

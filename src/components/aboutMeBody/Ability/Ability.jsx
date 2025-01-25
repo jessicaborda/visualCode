@@ -1,5 +1,5 @@
-import './styles/Ability.css';
-import { CardComponent } from '../../cardComponent';
+import './Ability.css';
+import { CardComponent } from '../../injectors/cardComponent';
 
 export const Ability = () => {
   const cardStyle = {

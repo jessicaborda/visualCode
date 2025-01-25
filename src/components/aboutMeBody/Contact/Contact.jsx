@@ -1,6 +1,6 @@
-import './styles/Contact.css';
-import { IconComponent } from '../../iconComponent';
-import { SvgComponent } from '../../svgComponent';
+import './Contact.css';
+import { IconComponent } from '../../injectors/iconComponent';
+import { SvgComponent } from '../../injectors/svgComponent.jsx';
 
 const ContactForm = () => {
   return (

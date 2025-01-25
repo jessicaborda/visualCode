@@ -1,5 +1,5 @@
-import './styles/Skills.css';
-import { IconComponent } from '../../iconComponent';
+import './Skills.css';
+import { IconComponent } from '../../injectors/iconComponent';
 
 export const Skills = () => {
   const styles = {

@@ -1,4 +1,4 @@
-import { IconComponent } from '../iconComponent';
+import { IconComponent } from '../injectors/iconComponent';
 
 export const FooterIcons = () => {
   const styles = {

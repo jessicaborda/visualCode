@@ -26,3 +26,20 @@
   font-weight: 200;
   transition: all 0.3s ease;
 }
+
+.menuIcon {
+  cursor: pointer;
+}
+
+.dropDownMenu {
+  position: absolute;
+  right: 0; /* Alinea el menú a la derecha */
+}
+
+.dropdown-menu.active {
+  display: block;
+}
+
+.dropdown-menu ul li:hover {
+  border: solid 2px var(--color-lightgray);
+}
