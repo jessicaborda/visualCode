@@ -22,7 +22,7 @@ export const DropDownMenu = () => {
         <div className="dropDownMenu">
           <div className="CloseIcon">
             <IconComponent
-              iconPath="public/assets/header/icono_X.svg"
+              iconPath="/assets/header/icono_X.svg"
               altText="figmaIcon"
               style={styles}
             />

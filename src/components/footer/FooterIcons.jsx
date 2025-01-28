@@ -9,22 +9,22 @@ export const FooterIcons = () => {
   return (
     <div className="footerIcons">
       <IconComponent
-        iconPath="public/assets/about/icon_linkedin.svg"
+        iconPath="/assets/about/icon_linkedin.svg"
         altText="facebookIcon"
         style={styles}
       />
       <IconComponent
-        iconPath="public/assets/about/icon_instagram.svg"
+        iconPath="/assets/about/icon_instagram.svg"
         altText="instagramIcon"
         style={styles}
       />
       <IconComponent
-        iconPath="public/assets/about/icon_facebook.svg"
+        iconPath="/assets/about/icon_facebook.svg"
         altText="twitterIcon"
         style={styles}
       />
       <IconComponent
-        iconPath="public/assets/about/icon_gmail.svg"
+        iconPath="/assets/about/icon_gmail.svg"
         altText="twitterIcon"
         style={styles}
       />

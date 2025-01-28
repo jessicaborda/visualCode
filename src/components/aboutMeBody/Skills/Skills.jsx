@@ -22,49 +22,49 @@ export const Skills = () => {
 
         <div className="skillsIcons">
           <IconComponent
-            iconPath="public/assets/about/icon_html.svg"
+            iconPath="/assets/about/icon_html.svg"
             altText="htmlIcon"
             title="HTML"
             style={styles}
           />
 
           <IconComponent
-            iconPath="public/assets/about/icon_css.svg"
+            iconPath="/assets/about/icon_css.svg"
             altText="cssIcon"
             title="CSS"
             style={styles}
           />
 
           <IconComponent
-            iconPath="public/assets/about/icon_javascript.svg"
+            iconPath="/assets/about/icon_javascript.svg"
             altText="javascriptIcon"
             title="JavaScript"
             style={styles}
           />
 
           <IconComponent
-            iconPath="public/assets/about/icon_react.svg"
+            iconPath="/assets/about/icon_react.svg"
             altText="reactIcon"
             title="React"
             style={styles}
           />
 
           <IconComponent
-            iconPath="public/assets/about/icon_figma.svg"
+            iconPath="/assets/about/icon_figma.svg"
             altText="figmaIcon"
             title="Figma"
             style={styles}
           />
 
           <IconComponent
-            iconPath="public/assets/about/icon_sketchup.svg"
+            iconPath="/assets/about/icon_sketchup.svg"
             altText="figmaIcon"
             title="SketchUp"
             style={styles}
           />
 
           <IconComponent
-            iconPath="public/assets/about/icon_autocad.svg"
+            iconPath="/assets/about/icon_autocad.svg"
             altText="figmaIcon"
             title="AutoCAD"
             style={styles}
