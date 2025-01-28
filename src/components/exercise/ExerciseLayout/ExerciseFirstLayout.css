@@ -1,0 +1,35 @@
+.exerciseFirstLayout-container{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-mediumgray);
+    background-image: url(../public/assets/exercises/fondo_02.svg);
+    background-size: auto;
+}
+
+.inputText, .textProcessed{
+    width: 664px;
+    height: 284px;
+    padding: 10px;
+    background-color: var(--color-darkgray);
+    color: var(--color-text);
+    border: solid 2px var(--color-primary);
+    border-radius: var(--border-normal);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.textProcessed{
+    resize: none;
+    overflow: auto;
+}
+
+button:hover{
+    box-shadow: 0 0 20px var(--color-darkgray);
+}
+
+
