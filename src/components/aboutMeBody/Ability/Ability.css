@@ -3,6 +3,9 @@
   background: var(--color-section);
   color: var(--color-text);
   overflow: hidden;
+  background-image: url(../assets/about/Star_ability.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .abilityContainer h2 {

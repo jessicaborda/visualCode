@@ -7,7 +7,9 @@
     flex-direction: column;
     background-color: var(--color-mediumgray);
     background-image: url(../public/assets/exercises/fondo_02.svg);
-    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .inputText, .textProcessed{
@@ -19,17 +21,34 @@
     border: solid 2px var(--color-primary);
     border-radius: var(--border-normal);
     text-align: center;
-    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5px;
+    font-size: 18px;
     font-weight: 200;
-}
-
-.textProcessed{
     resize: none;
     overflow: auto;
 }
 
-button:hover{
-    box-shadow: 0 0 20px var(--color-darkgray);
+
+.button-dark {
+    width: 140px;
+    height: 50px;
+    background-color: var(--color-mediumgray);
+    border-radius: var(--border-button);
+    border: solid 2px var(--color-primary);
+    color: var(--color-primary);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    display: block;
 }
+
+
+button:hover{
+    background-color: var(--color-lightgray);
+}
+
 
 

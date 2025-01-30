@@ -1,5 +1,6 @@
 import { DropDownItems } from '../injectors/DropDownItems';
 import { IconComponent } from '../injectors/iconComponent';
+import { EXERCISES } from '../VisualController/exercisesConst';
 import './DropDownMenu.css';
 
 export const DropDownMenu = () => {
@@ -8,13 +9,18 @@ export const DropDownMenu = () => {
     height: 'auto',
   };
 
-  const dropDownItems = [
-    { label: 'Ejercicio 1', href: '/ejercicio1' },
-    { label: 'Ejercicio 2', href: '/ejercicio2' },
-    { label: 'Ejercicio 3', href: '/ejercicio3' },
-    { label: 'Ejercicio 4', href: '/ejercicio4' },
-    // Puedes añadir más ítems aquí
-  ];
+  const dropDownItems = Object.keys(EXERCISES).map((key) => ({
+    label: EXERCISES[key].name, // Usar el nombre del ejercicio
+    href: '/exercises' + EXERCISES[key].path, // Usar la ruta del ejercicio
+  }));
+
+  // const dropDownItems = [
+  //   { label: 'Ejercicio 1', href: '/ejercicio1' },
+  //   { label: 'Ejercicio 2', href: '/ejercicio2' },
+  //   { label: 'Ejercicio 3', href: '/ejercicio3' },
+  //   { label: 'Ejercicio 4', href: '/ejercicio4' },
+  //   // Puedes añadir más ítems aquí
+  // ];
 
   return (
     <>

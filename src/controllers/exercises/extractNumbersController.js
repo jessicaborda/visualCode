@@ -1,4 +1,4 @@
-export const ExtractNumbers(text) {
+export function extractNumbersController(text) {
   // p3rr1t0
   let letters = Array.from(text);
 

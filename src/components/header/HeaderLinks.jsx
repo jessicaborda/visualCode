@@ -1,7 +1,9 @@
+import { Link } from 'react-router';
+
 export const HeaderLinks = () => {
   return (
     <div className="navbarLinks">
-      <a href="#">About Me</a>
+      <Link to="/about">About Me</Link>
       <a href="#">Documentación</a>
     </div>
   );

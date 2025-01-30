@@ -1,11 +1,9 @@
-import { DropDownMenu } from '../../components/dropDownMenu/DropDownMenu';
-import { Header } from '../../components/header';
+import { CalculatorLayout } from '../../components/ExerciseLayout';
 
 export const NormalPage = () => {
   return (
     <>
-      <Header />
-      <DropDownMenu />
+      <CalculatorLayout />
     </>
   );
 };

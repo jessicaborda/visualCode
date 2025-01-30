@@ -54,19 +54,6 @@ h5 {
   line-height: 25px;
 }
 
-button {
-  width: 140px;
-  height: 50px;
-  background-color: var(--color-primary);
-  border-radius: var(--border-button);
-  border: solid 2px var(--color-darkgray);
-  color: var(--color-text);
-  margin-top: 24px;
-  margin-bottom: 24px;
-  cursor: pointer;
-  display: block;
-}
-
 p {
   color: var(--color-text);
   font-size: 16px;

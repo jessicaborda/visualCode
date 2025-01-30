@@ -1,17 +1,17 @@
+import PropTypes from 'prop-types'; // Importa PropTypes para validar las props
 import { useState } from 'react';
 import { Footer } from '../../footer';
 import { Header } from '../../header';
-import './ExerciseFirstLayout.css';
+import './DualBoxLayout.css';
 
-export const ExerciseFirstLayout = () => {
+export const DualBoxLayout = ({ handleFunction }) => {
   const [inputText, setInputText] = useState(''); //Texto ingresado
   const [processedText, setProcessedText] = useState(''); //Texto procesado
 
   // Función para procesar el texto ingresado
   const handleProcessText = () => {
-    // Aquí defines tu lógica específica de procesamiento
-    const result = inputText.toUpperCase(); // Ejemplo: convierte el texto a mayúsculas
-    setProcessedText(result);
+    const processed = handleFunction(inputText); // Llama a la función pasada como prop con el texto ingresado
+    setProcessedText(processed); // Actualiza el estado con el texto procesado
   };
 
   return (
@@ -21,21 +21,26 @@ export const ExerciseFirstLayout = () => {
         <input
           className="inputText"
           type="text"
-          placeholder="Ingresar Texto"
           value={inputText}
+          placeholder="Ingresar Texto"
           onChange={(e) => setInputText(e.target.value)} // Actualiza el estado
         />
-        <button onClick={handleProcessText}>Ejecutar</button>
-        <textarea
+        <button className="button-dark" onClick={handleProcessText}>
+          Ejecutar
+        </button>
+        <input
           className="textProcessed"
-          name="textProcesado"
-          id="textProcesado"
-          placeholder="Aquí se mostrará tu texto procesado"
+          type="text"
           value={processedText} // Muestra el texto procesado
-          readOnly // Hace que el textarea sea de solo lectura
-        ></textarea>
+          placeholder="Aquí se mostrará tu texto procesado"
+          disabled
+        />
       </div>
       <Footer />
     </>
   );
+};
+
+DualBoxLayout.propTypes = {
+  handleFunction: PropTypes.func.isRequired, // Asegúrate de importar PropTypes si no lo has hecho ya
 };

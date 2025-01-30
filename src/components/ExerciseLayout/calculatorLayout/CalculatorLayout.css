@@ -1,0 +1,30 @@
+.calculatorContainer {
+    height: 100vh;
+    background-color: var(--color-mediumgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculatorResult {
+    width: 880px;
+    height: 120px;
+    border: solid 2px var(--color-primary);
+    border-radius: var(--border-normal);
+    text-align: center;
+    background-color: var(--color-lightgray);
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculatorButtons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    gap: 15px;
+}
