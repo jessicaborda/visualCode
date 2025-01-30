@@ -3,8 +3,10 @@ import {
   extractNumbersController,
   countWordController,
   invertStringController,
+  calculatorOperations,
 } from '../../controllers/exercises';
 import { DualBoxLayout } from '../ExerciseLayout';
+import { CalculatorLayout } from '../ExerciseLayout/calculatorLayout/CalculatorLayout';
 
 export const EXERCISES = {
   'string-to-upper': {
@@ -30,5 +32,11 @@ export const EXERCISES = {
     path: '/invert-string',
     layout: DualBoxLayout,
     handleFunction: invertStringController,
+  },
+  calculator: {
+    name: 'Calculadora',
+    path: '/calculator',
+    layout: CalculatorLayout,
+    handleFunction: calculatorOperations,
   },
 };

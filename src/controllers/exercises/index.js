@@ -1,3 +1,4 @@
+import { calculatorOperations } from './calculatorController.js'; // Importa la función calculatorOperations
 import { countWordController } from './countWordController.js';
 import { extractNumbersController } from './extractNumbersController.js'; // Importa la función extractNumbers
 import { invertStringController } from './invertStringController.js'; // Importa la función invertStringController
@@ -8,4 +9,5 @@ export {
   stringToUpperController,
   countWordController,
   invertStringController,
+  calculatorOperations,
 };

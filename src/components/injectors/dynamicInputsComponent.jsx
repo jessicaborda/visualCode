@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 export const DynamicInputsComponent = ({
   values,
@@ -6,6 +7,9 @@ export const DynamicInputsComponent = ({
   onRemoveInput,
   onChange,
 }) => {
+  const [isAddHovered, setIsAddHovered] = useState(false); // Estado para el botón "Agregar"
+  const [isRemoveHovered, setIsRemoveHovered] = useState(false); // Estado para el botón "Eliminar"
+
   const containerStyle = {
     display: 'flex', // Usar Flexbox
     alignItems: 'center', // Alinear verticalmente al centro
@@ -29,13 +33,18 @@ export const DynamicInputsComponent = ({
     margin: '20px',
     borderRadius: 'var(--border-button',
     border: 'solid 1.5px var(--color-primary)',
-    backgroundColor: 'var(--color-darkgray)',
+    backgroundColor: isAddHovered
+      ? 'var(--color-lightgray)'
+      : 'var(--color-darkgray)', // Cambia el color de fondo al hacer hover
     color: 'var(--color-primary)',
     cursor: 'pointer',
   };
 
   const buttonDangerStyle = {
     ...buttonStyle, // Hereda los estilos de buttonStyle
+    backgroundColor: isRemoveHovered
+      ? 'var(--color-lightgray)'
+      : 'var(--color-darkgray)', // Cambia el color de fondo al hacer hover
   };
 
   return (
@@ -54,11 +63,21 @@ export const DynamicInputsComponent = ({
         </div>
       ))}
       <div>
-        <button onClick={onAddInput} style={buttonStyle}>
+        <button
+          onClick={onAddInput}
+          style={buttonStyle}
+          onMouseEnter={() => setIsAddHovered(true)} // Cambia el estado al entrar el mouse
+          onMouseLeave={() => setIsAddHovered(false)} // Restaura el estado al salir el mouse
+        >
           Agregar
         </button>
         {values.length > 2 && (
-          <button onClick={onRemoveInput} style={buttonDangerStyle}>
+          <button
+            onClick={onRemoveInput}
+            style={buttonDangerStyle}
+            onMouseEnter={() => setIsRemoveHovered(true)} // Cambia el estado al entrar el mouse
+            onMouseLeave={() => setIsRemoveHovered(false)} // Restaura el estado al salir el mouse
+          >
             Eliminar
           </button>
         )}
