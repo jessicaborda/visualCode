@@ -33,11 +33,13 @@ export const CardComponent = ({
   };
   return (
     <div style={{ ...defaultStyle.card, ...style }}>
-      <IconComponent
-        iconPath={iconPath}
-        altText={title}
-        style={{ width: '50px', height: '50px', ...iconStyle }}
-      />
+      {iconPath && (
+        <IconComponent
+          iconPath={iconPath}
+          altText={title}
+          style={{ width: '50px', height: '50px', ...iconStyle }}
+        />
+      )}
       <h3 style={{ ...defaultStyle.title, ...titleStyle }}>{title}</h3>
       <p style={{ ...defaultStyle.description, ...descriptionStyle }}>
         {description}

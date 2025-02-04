@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import { VisualController } from './components/VisualController/VisualController';
-import About from './pages/about';
+import { Home, About } from './pages';
 import { Test } from './pages/test/Test';
 import './styles.css';
 
@@ -10,6 +10,7 @@ const root = document.getElementById('root');
 ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/test" element={<Test />} />
       <Route path="/exercises">

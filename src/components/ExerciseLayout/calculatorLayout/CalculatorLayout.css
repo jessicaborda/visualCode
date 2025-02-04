@@ -1,6 +1,6 @@
 .calculatorContainer {
     height: 95vh;
-    background-color: var(--color-mediumgray);
+    background-color: var(--color-darkgray);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,13 +10,13 @@
 .calculatorResult {
     width: 880px;
     height: 120px;
-    border: solid 2px var(--color-primary);
+    border: none;
     border-radius: var(--border-normal);
     text-align: center;
-    background-color: var(--color-lightgray);
+    background-color: var(--color-mediumgray);
     font-size: 30px;
     font-weight: 500;
-    color: var(--color-text);
+    color: var(--color-lightgray);
     display: flex;
     justify-content: center;
     align-items: center;

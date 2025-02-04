@@ -14,14 +14,6 @@ export const DropDownMenu = () => {
     href: '/exercises' + EXERCISES[key].path, // Usar la ruta del ejercicio
   }));
 
-  // const dropDownItems = [
-  //   { label: 'Ejercicio 1', href: '/ejercicio1' },
-  //   { label: 'Ejercicio 2', href: '/ejercicio2' },
-  //   { label: 'Ejercicio 3', href: '/ejercicio3' },
-  //   { label: 'Ejercicio 4', href: '/ejercicio4' },
-  //   // Puedes añadir más ítems aquí
-  // ];
-
   return (
     <>
       <div className="dropDownContainer">

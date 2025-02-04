@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+
 import { Footer } from '../../footer';
 import { Header } from '../../header';
 import { CustomButtonComponent } from '../../injectors/customButtonComponent';
@@ -66,6 +67,7 @@ export const CalculatorLayout = ({ handleFunction }) => {
   return (
     <>
       <Header />
+
       <div className="calculatorContainer">
         <div className="calculatorInputs">
           <DynamicInputsComponent
@@ -85,19 +87,6 @@ export const CalculatorLayout = ({ handleFunction }) => {
             />
           ))}
         </div>
-        {/* 
-      <div className="calculatorButtons">
-        <CustomButtonComponent
-          onClick={() => handleResult('sumar')}
-          label="Sumar"
-        />
-        <CustomButtonComponent onClick={handleRestar} label="Restar" />
-        <CustomButtonComponent
-          onClick={handleMultiplicar}
-          label="Multiplicar"
-        />
-        <CustomButtonComponent onClick={handleDividir} label="Dividir" />
-      </div> */}
 
         <div className="calculatorResult">Resultado: {result}</div>
       </div>

@@ -14,7 +14,7 @@ export const Ability = () => {
 
   const titleStyle = {
     color: '#ffc800',
-    fondSize: '20px',
+    fontSize: '20px',
     lineHeight: '1.0',
   };
 

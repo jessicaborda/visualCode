@@ -22,8 +22,8 @@ export const DynamicInputsComponent = ({
     padding: '10px',
     margin: '20px',
     borderRadius: 'var(--border-normal)',
-    border: '1px solid var(--color-primary)',
-    backgroundColor: 'var(--color-darkgray)',
+    border: '1px solid var(--color-lightgray)',
+    backgroundColor: 'var(--color-mediumgray)',
     color: 'white',
     textAlign: 'center',
   };
@@ -32,19 +32,29 @@ export const DynamicInputsComponent = ({
     padding: '10px 15px',
     margin: '20px',
     borderRadius: 'var(--border-button',
-    border: 'solid 1.5px var(--color-primary)',
+    border: '1px solid var(--color-lightgray)',
     backgroundColor: isAddHovered
       ? 'var(--color-lightgray)'
-      : 'var(--color-darkgray)', // Cambia el color de fondo al hacer hover
-    color: 'var(--color-primary)',
+      : 'var(--color-mediumgray)', // Cambia el color de fondo al hacer hover
+    borderColor: isAddHovered
+      ? 'var(--color-primary)'
+      : 'var(--color-lightgray)',
+    color: isAddHovered ? 'var(--color-primary)' : 'var(--color-text)',
     cursor: 'pointer',
   };
 
   const buttonDangerStyle = {
-    ...buttonStyle, // Hereda los estilos de buttonStyle
+    padding: '10px 15px',
+    margin: '20px',
+    borderRadius: 'var(--border-button',
+    border: '1px solid var(--color-lightgray)',
     backgroundColor: isRemoveHovered
       ? 'var(--color-lightgray)'
-      : 'var(--color-darkgray)', // Cambia el color de fondo al hacer hover
+      : 'var(--color-mediumgray)', // Cambia el color de fondo al hacer hover
+    borderColor: isRemoveHovered
+      ? 'var(--color-primary)'
+      : 'var(--color-lightgray)',
+    color: isRemoveHovered ? 'var(--color-primary)' : 'var(--color-text)',
   };
 
   return (

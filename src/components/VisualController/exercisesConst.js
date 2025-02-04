@@ -7,6 +7,7 @@ import {
 } from '../../controllers/exercises';
 import { DualBoxLayout } from '../ExerciseLayout';
 import { CalculatorLayout } from '../ExerciseLayout/calculatorLayout/CalculatorLayout';
+import { CreadorDadosLayout } from '../ExerciseLayout/creadorDadosLayout/CreadorDadosLayout';
 
 export const EXERCISES = {
   'string-to-upper': {
@@ -37,6 +38,12 @@ export const EXERCISES = {
     name: 'Calculadora',
     path: '/calculator',
     layout: CalculatorLayout,
+    handleFunction: calculatorOperations,
+  },
+  'creator-dice': {
+    name: 'Creador de Dados',
+    path: '/creator-dice',
+    layout: CreadorDadosLayout,
     handleFunction: calculatorOperations,
   },
 };

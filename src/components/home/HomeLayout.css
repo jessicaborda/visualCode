@@ -1,0 +1,42 @@
+.homeContainer {
+    background-color: var(--color-darkgray);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5vh;
+}
+
+.CardsContainer {
+    display: flex;
+    justify-content: center; /* Centra las cards horizontalmente */
+    align-items: flex-start; /* Alinea las cards en la parte superior */
+    gap: 10%; /* Espacio entre las cards */
+    position: relative;
+    z-index: 1;
+  }
+
+  .descriptionContainer {
+    position: absolute;
+    background-image: url(../../assets/home/Fondo_Home.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .descriptionItem {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    width: 70%;
+  }
+
+  .highlight {
+    color: var(--color-primary);
+}

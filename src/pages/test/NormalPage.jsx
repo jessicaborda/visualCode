@@ -1,9 +1,10 @@
-import { CalculatorLayout } from '../../components/ExerciseLayout';
+import { CreadorDadosLayout } from '../../components/ExerciseLayout/creadorDadosLayout/CreadorDadosLayout';
+import { HomeLayout } from '../../components/home/HomeLayout';
 
 export const NormalPage = () => {
   return (
     <>
-      <CalculatorLayout />
+      <HomeLayout />
     </>
   );
 };

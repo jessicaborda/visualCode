@@ -17,6 +17,7 @@ export const DualBoxLayout = ({ handleFunction }) => {
   return (
     <>
       <Header />
+
       <div className="exerciseFirstLayout-container">
         <input
           className="inputText"

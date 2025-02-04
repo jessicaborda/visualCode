@@ -3,10 +3,11 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  top: 0;
   width: 98%;
   height: 5vh; /* 5% de la pantalla */
   padding: 0 2rem;
-  background-color: #423e37; /* Color de fondo */
+  background-color: #36332d; /* Color de fondo */
   z-index: 1000;
 }
 
