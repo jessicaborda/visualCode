@@ -38,9 +38,10 @@ button {
   background-color: var(--color-primary);
   border-radius: var(--border-button);
   border: solid 2px var(--color-darkgray);
-  color: var(--color-text);
+  color: var(--color-darkgray);
   margin-top: 24px;
   margin-bottom: 24px;
   cursor: pointer;
   display: block;
+  text-decoration: none;
 }

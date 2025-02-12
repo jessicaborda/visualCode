@@ -44,3 +44,9 @@
 .dropdown-menu ul li:hover {
   border: solid 2px var(--color-lightgray);
 }
+
+.navbarLinks a:hover,
+.navbarLinks .activeLink {
+  color: var(--color-primary); /* Cambia a tu color preferido */
+  font-weight: 400;
+}

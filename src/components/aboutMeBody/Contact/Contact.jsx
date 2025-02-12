@@ -3,20 +3,48 @@ import { IconComponent } from '../../injectors/iconComponent';
 import { SvgComponent } from '../../injectors/svgComponent.jsx';
 
 const ContactForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const name = e.target[0].value;
+    const email = e.target[1].value;
+    const subject = e.target[2].value;
+    const message = e.target[3].value;
+
+    const mailtoLink = `mailto:jessi.borda09@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nombre: ${name}%0AEmail: ${email}%0A%0A${message}`)}`;
+
+    window.location.href = mailtoLink;
+  };
+
   return (
-    <form className="contactForm">
-      <input className="inputForm_name" type="text" placeholder="Tu nombre" />
-      <input className="inputForm_email" type="text" placeholder="Tu Correo" />
-      <input className="inputForm_asunto" type="text" placeholder="Asunto" />
+    <form className="contactForm" onSubmit={handleSubmit}>
+      <input
+        className="inputForm_name"
+        type="text"
+        placeholder="Tu nombre"
+        required
+      />
+      <input
+        className="inputForm_email"
+        type="email"
+        placeholder="Tu Correo"
+        required
+      />
+      <input
+        className="inputForm_asunto"
+        type="text"
+        placeholder="Asunto"
+        required
+      />
       <textarea
         className="inputForm_message"
-        name="message"
-        id="message"
         placeholder="Tu mensaje"
         required
       ></textarea>
       <div className="buttonFormContainer">
-        <button className="buttonForm">Enviar</button>
+        <button className="buttonForm" type="submit">
+          Enviar
+        </button>
       </div>
     </form>
   );
@@ -31,31 +59,57 @@ const ContactSocialIcons = () => {
   return (
     <>
       <div className="socialIconsContainer">
-        <IconComponent
-          iconPath="/assets/about/icon_github_contact.svg"
-          altText="githubIcon"
-          style={styles}
-        />
-        <IconComponent
-          iconPath="/assets/about/icon_linkedin_contact.svg"
-          altText="linkedinIcon"
-          style={styles}
-        />
-        <IconComponent
-          iconPath="/assets/about/icon_gmail_contact.svg"
-          altText="gmailIcon"
-          style={styles}
-        />
-        <IconComponent
-          iconPath="/assets/about/icon_instagram_contact.svg"
-          altText="instagramIcon"
-          style={styles}
-        />
-        <IconComponent
-          iconPath="/assets/about/icon_facebook_contact.svg"
-          altText="facebookIcon"
-          style={styles}
-        />
+        <a
+          href="https://github.com/jessicaborda"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconComponent
+            iconPath="/assets/about/icon_github_contact.svg"
+            altText="githubIcon"
+            style={styles}
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jessicaborda/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconComponent
+            iconPath="/assets/about/icon_linkedin_contact.svg"
+            altText="linkedinIcon"
+            style={styles}
+          />
+        </a>
+        <a href="mailto:jessi.borda09@gmail.com">
+          <IconComponent
+            iconPath="/assets/about/icon_gmail_contact.svg"
+            altText="gmailIcon"
+            style={styles}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/ars_design_st?igsh=ODFlNTJ5a3JlamQz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconComponent
+            iconPath="/assets/about/icon_instagram_contact.svg"
+            altText="instagramIcon"
+            style={styles}
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/share/1DEM839SBE/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconComponent
+            iconPath="/assets/about/icon_facebook_contact.svg"
+            altText="facebookIcon"
+            style={styles}
+          />
+        </a>
       </div>
     </>
   );

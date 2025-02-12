@@ -8,13 +8,14 @@ export const AboutMe = () => {
         <h1>Jessica Borda</h1>
         <h3>Frontend Developer / UX Designer / Architect</h3>
         <p>
-          ¡Hola! Mi nombre es Jessica Borda, soy arquitecta civil de profesión,
-          por lo cual mi verdadera pasión siempre ha sido el diseño. A lo largo
-          de mi carrera, he desarrollado una fuerte afinidad por la creación de
-          espacios y soluciones que mejoren la experiencia de las personas. Esta
-          pasión me ha llevado a adentrarme en el mundo del desarrollo de
-          software y el diseño UX, donde puedo combinar mi formación técnica con
-          mi amor por el diseño centrado en el usuario.
+          ¡Hola! Mi nombre es Jessica Borda, soy Frontend Developer, actualmente
+          soy estudiante de Arquitectura Cloud, sin embargo también soy
+          Arquitecta civil, por lo cual mi verdadera pasión siempre ha sido el
+          diseño. A lo largo de mi carrera, he desarrollado una fuerte afinidad
+          por la creación de espacios y soluciones que mejoren la experiencia de
+          las personas. Esta pasión me ha llevado a adentrarme en el mundo del
+          desarrollo de software y el diseño UX, donde puedo combinar mi
+          formación técnica con mi amor por el diseño centrado en el usuario.
         </p>
         <h3>Información Personal</h3>
         <div className="infoRowContainer">
@@ -29,7 +30,9 @@ export const AboutMe = () => {
             <InfoRowComponent title="Ubicación" data="Tunja, Boyacá" />
           </div>
         </div>
-        <button>Descargar CV</button>
+        <a href="/assets/header/CV_JessicaBorda.pdf" download>
+          <button>Descargar CV</button>
+        </a>
       </div>
     </>
   );
