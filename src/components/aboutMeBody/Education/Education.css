@@ -4,8 +4,9 @@
   align-items: flex-start; /* Alineación vertical al inicio */
   background-color: var(--color-section);
   color: var(--color-text);
-  height: 800px;
+  height: min-content;
   gap: 1rem;
+  padding: 2rem;
   position: relative; /* Posición relativa para que el dividor se posicione correctamente */
 }
 
@@ -34,4 +35,27 @@
   padding-top: 24px;
   padding-left: 15%;
   text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+  .experience-educationContainer {
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en la columna */
+  }
+
+  .experienceContainer,
+  .educationContainer {
+    width: 90%; /* Ajusta el ancho para ocupar más espacio */
+    padding: 10px; /* Reduce el padding para mejor ajuste */
+  }
+
+  .educationItems,
+.experienceItems {
+  padding: 1rem; /* Elimina el padding izquierdo para mejor ajuste */
+}
+
+  .divider {
+    display: none; /* Oculta la línea divisoria en móviles */
+  }
+  
 }

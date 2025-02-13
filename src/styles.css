@@ -65,3 +65,39 @@ button {
   height: 50px;
   border-radius: var(--border-button);
 }
+
+@media screen and (max-width: 850px) {
+  *{
+    overflow-x: hidden;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  *{
+    overflow-x: hidden;
+  }
+}

@@ -4,7 +4,7 @@
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: 98%;
+  width: 98vw;
   height: 5vh; /* 5% de la pantalla */
   padding: 0 2rem;
   background-color: #36332d; /* Color de fondo */
@@ -49,4 +49,24 @@
 .navbarLinks .activeLink {
   color: var(--color-primary); /* Cambia a tu color preferido */
   font-weight: 400;
+}
+
+@media screen and (max-width: 850px) {
+  .headerContainer{
+    padding: 0 1rem;
+  }
+
+  .navbarLogo img {
+    width: 120px;
+    height: auto;
+    
+  }
+
+  .navbarLinks a {
+    font-size: 12px;
+  }
+  .menuIcon{
+    padding-right: 1rem;
+  }
+  
 }

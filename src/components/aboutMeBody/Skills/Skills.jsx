@@ -3,8 +3,8 @@ import { IconComponent } from '../../injectors/iconComponent';
 
 export const Skills = () => {
   const styles = {
-    width: '90px',
-    height: '90px',
+    width: '5vw',
+    height: 'auto',
   };
 
   return (

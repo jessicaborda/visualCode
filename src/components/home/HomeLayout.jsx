@@ -4,7 +4,7 @@ import './HomeLayout.css';
 export const HomeLayout = () => {
   const cardStyle = {
     width: '320px',
-    height: '433px',
+    height: '430px',
     backgroundColor: 'var(--color-primary)',
     boxShadow: '30px 25px 25px #5d2e8c',
     display: 'flex',
@@ -18,7 +18,7 @@ export const HomeLayout = () => {
     fontWeight: 'bold',
     lineHeight: '1.0',
     textAlign: 'left',
-    padding: '150px 0 0 20px',
+    padding: '100px 0 0 20px',
   };
 
   const iconStyle = {
@@ -33,7 +33,7 @@ export const HomeLayout = () => {
     fontWeight: 'medium',
     lineHeight: '1.5',
     width: '280px',
-    height: '200px',
+    height: '50%',
     fontSize: '24px',
     padding: '20px 20px',
     textAlign: 'left',
@@ -49,7 +49,6 @@ export const HomeLayout = () => {
             para la visualización de ejercicios en JavaScript y React, mediante
             un entorno interactivo y sencillo.
           </p>
-
           <div className="CardsContainer">
             <CardComponent
               iconPath=""

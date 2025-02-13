@@ -14,19 +14,18 @@ export const CardComponent = ({
     card: {
       borderRadius: '15px',
       width: '273px',
-      height: '385px',
-      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      height: 'min-content',
       textAlign: 'center',
-      backgroundColor: '#a7a2a9',
+      backgroundColor: 'var(--color-lightgray)',
     },
     title: {
       fontSize: '18px',
       fontWeight: 'bold',
-      margin: '8px 0',
+      paddingTop: '20px',
     },
     description: {
       fontSize: '14px',
-      padding: '140px 20px 0',
+      padding: '20px',
       color: '#555',
       textAlign: 'left',
     },

@@ -10,8 +10,8 @@ export const HeaderDropdownMenu = () => {
   };
 
   const styles = {
-    width: '50px',
-    height: '50px',
+    width: '80%',
+    height: 'auto',
   };
 
   return (

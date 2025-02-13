@@ -1,6 +1,7 @@
 .aboutMeContainer {
   width: 100%;
-  height: 900px;
+  min-height: 100vh;
+  margin-top: 5vh;
   background-image: linear-gradient(rgba(93, 46, 140, 0.588), rgb(55, 32, 79)),
     url(/assets/about/fondo_1.jpg);
   background-repeat: no-repeat;
@@ -25,10 +26,11 @@
   color: var(--color-text);
   font-size: 24px;
   font-weight: 700;
+  padding-bottom: 2rem;
 }
 
 .aboutMeContainer p {
-  width: 550px;
+  width: 575px;
   height: auto;
 }
 
@@ -45,3 +47,42 @@ button {
   display: block;
   text-decoration: none;
 }
+
+@media screen and (max-width: 850px) {
+
+  .aboutMeContainer h3 {
+    font-size: 17px;
+    overflow: visible;
+    white-space: normal;
+  }
+
+  .aboutMeContainer p {
+    width: 60%;
+  }
+
+  .infoRowContainer {
+    gap: 1rem;
+    padding: 0 1rem; /* Espacio entre los dos divs */
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .aboutMeContainer h3 {
+    font-size: 17px;
+    overflow: visible;
+    white-space: normal;
+  }
+
+  .aboutMeContainer p {
+    width: 90%;
+  }
+
+  .infoRowContainer {
+    gap: 1rem;
+    padding: 0 1rem; /* Espacio entre los dos divs */
+    margin: 0;
+  }
+}
+

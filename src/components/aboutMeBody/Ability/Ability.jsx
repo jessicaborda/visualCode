@@ -3,13 +3,13 @@ import { CardComponent } from '../../injectors/cardComponent';
 
 export const Ability = () => {
   const cardStyle = {
-    backgroundColor: '#a7a2a9',
+    backgroundColor: 'var(--color-lightgray)',
+    padding: '10px',
   };
 
   const iconStyle = {
     width: '63px',
-    height: 'auto',
-    paddingTop: '20px',
+    height: '63px',
   };
 
   const titleStyle = {
@@ -23,8 +23,6 @@ export const Ability = () => {
     lineHeight: '1.5',
     width: '230px',
     height: 'auto',
-    paddingTop: '140px',
-    position: 'absolute',
     top: '0',
   };
 
@@ -45,7 +43,7 @@ export const Ability = () => {
 
           <CardComponent
             iconPath="/assets/about/icon_code_laptop.svg"
-            title="Diseño de Experiencia de Usuario"
+            title="Diseño UX/UI"
             description="Como UX Designer, aplico principios de diseño centrado en el usuario para crear experiencias digitales intuitivas y funcionales. Utilizo herramientas como Figma para diseñar prototipos y realizar pruebas de usabilidad, garantizando que cada diseño no solo sea estéticamente agradable, sino también fácil de usar y adaptado a las necesidades del usuario."
             style={cardStyle}
             iconStyle={iconStyle}

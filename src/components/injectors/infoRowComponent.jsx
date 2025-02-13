@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 export const InfoRowComponent = ({ title, data }) => {
   const styles = {
     row: { margin: '8px 0' },
-    title: { fontWeight: 'bold', color: '#ffc800' },
-    data: { fontWeight: '300', color: '#fff' },
+    title: { fontWeight: 'bold', color: 'var(--color-primary)' },
+    data: { fontWeight: '300', color: 'var(--color-text)' },
   };
 
   return (

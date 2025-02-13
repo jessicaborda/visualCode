@@ -14,5 +14,18 @@
   display: flex;
   justify-content: space-between;
   width: 10%;
+  padding-right: 2rem;
   gap: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .footerContainer {
+    padding: 0 1rem;
+    width: 100vw;
+  }
+  
+  .footerIcons {
+    width: 30%;
+    gap: 5px;
+  }
 }

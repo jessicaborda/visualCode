@@ -1,25 +1,31 @@
 .homeContainer {
     background-color: var(--color-darkgray);
     height: 90vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin-top: 5vh;
+    flex-direction: column;
 }
 
 .CardsContainer {
     display: flex;
+    flex-direction: row;
     justify-content: center; /* Centra las cards horizontalmente */
     align-items: flex-start; /* Alinea las cards en la parte superior */
     gap: 10%; /* Espacio entre las cards */
     position: relative;
     z-index: 1;
+    width: 100%;
+    padding: 20px 0;
   }
 
   .descriptionContainer {
     position: absolute;
-    background-image: url(../../assets/home/Fondo_Home.jpg);
+    background-image: linear-gradient(rgba(67, 66, 68, 0.39), rgba(128, 126, 131, 0.37)),
+    url(../../assets/home/Fondo_Home.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -27,6 +33,8 @@
     top: 0;
     display: grid;
     place-items: center;
+    z-index: 0;
+    padding: 20px;
   }
 
   .descriptionItem {
@@ -39,4 +47,37 @@
 
   .highlight {
     color: var(--color-primary);
+}
+
+@media (max-width: 850px) {
+
+  .homeContainer {
+    background-image:linear-gradient(rgba(67, 66, 68, 0.39), rgba(128, 126, 131, 0.37)),
+    url(../../assets/home/Fondo_Home.jpg);
+    background-size: cover ;
+    background-position: center;
+    height: auto;
+        justify-content: flex-start; /* Alinea los elementos desde arriba */
+        margin-top: 0;
+    overflow: hidden;
+  }
+
+  .descriptionItem {
+    font-size: 25px;
+  }
+
+  .descriptionContainer {
+    background-image: none;
+    position: relative; /* Cambiamos la posición para que no se superponga */
+    height: 50%; /* Mantiene la altura de la descripción */
+  }
+
+  .CardsContainer {
+    flex-direction: column; /* Cambiado a columna para apilar las cards */
+    justify-content: flex-start; /* Alinea las cards hacia arriba */
+    align-items: center; /* Centra las cards horizontalmente */
+    gap: 3rem; /* Espacio entre las cards */
+    max-height: none; /* Elimina la limitación de altura */
+    overflow-y: auto; /* Si hay más cards de las que caben, se puede hacer scroll */
+  }
 }

@@ -1,6 +1,5 @@
 import './Contact.css';
 import { IconComponent } from '../../injectors/iconComponent';
-import { SvgComponent } from '../../injectors/svgComponent.jsx';
 
 const ContactForm = () => {
   const handleSubmit = (e) => {
@@ -119,9 +118,6 @@ export const Contact = () => {
   return (
     <>
       <div className="contactFormContainer">
-        <div className="fondGradiant">
-          <SvgComponent />
-        </div>
         <div className="contactText">
           <h2>Contáctame</h2>
           <p>
