@@ -14,7 +14,7 @@ export const FooterIcons = () => {
         rel="noopener noreferrer"
       >
         <IconComponent
-          iconPath="/assets/about/icon_linkedin.svg"
+          iconPath="../../assets/about/icon_linkedin.svg"
           altText="linkedinIcon"
           style={styles}
         />
@@ -36,14 +36,14 @@ export const FooterIcons = () => {
         rel="noopener noreferrer"
       >
         <IconComponent
-          iconPath="/assets/about/icon_facebook.svg"
+          iconPath="../../assets/about/icon_facebook.svg"
           altText="facebookIcon"
           style={styles}
         />
       </a>
       <a href="mailto:jessi.borda09@gmail.com">
         <IconComponent
-          iconPath="/assets/about/icon_gmail.svg"
+          iconPath="../../assets/about/icon_gmail.svg"
           altText="gmailIcon"
           style={styles}
         />

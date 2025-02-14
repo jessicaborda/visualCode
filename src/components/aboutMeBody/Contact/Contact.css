@@ -1,6 +1,6 @@
 .contactFormContainer {
   background-color: var(--color-secondary);
-  background-image: url(../assets/about/Star_contact.svg);
+  background-image: url(../../../assets/about/Star_contact.svg);
   background-position: center;
   background-repeat: no-repeat;
   color: var(--color-text);

@@ -18,7 +18,7 @@ export const HeaderDropdownMenu = () => {
     <>
       <div className="menuIcon" onClick={toggleMenu}>
         <IconComponent
-          iconPath="/assets/about/burgerMenuIcon.svg"
+          iconPath="../../assets/about/burgerMenuIcon.svg"
           altText="menuIcon"
           style={styles}
         />
