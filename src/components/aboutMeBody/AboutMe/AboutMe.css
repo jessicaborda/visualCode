@@ -3,7 +3,7 @@
   min-height: 100vh;
   margin-top: 5vh;
   background-image: linear-gradient(rgba(93, 46, 140, 0.588), rgb(55, 32, 79)),
-    url(/assets/about/fondo_1.jpg);
+    url(../../../assets/about/fondo_1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -3,7 +3,7 @@
   padding-bottom: 4rem;
   background: var(--color-section);
   color: var(--color-text);
-  background-image: url(../assets/about/Star_ability.svg);
+  background-image: url(../../../assets/about/Star_ability.svg);
   background-position: center;
   background-repeat: no-repeat;
 }

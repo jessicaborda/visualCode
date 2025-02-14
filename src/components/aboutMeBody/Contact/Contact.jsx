@@ -64,7 +64,7 @@ const ContactSocialIcons = () => {
           rel="noopener noreferrer"
         >
           <IconComponent
-            iconPath="/assets/about/icon_github_contact.svg"
+            iconPath="../../../assets/about/icon_github_contact.svg"
             altText="githubIcon"
             style={styles}
           />
@@ -75,14 +75,14 @@ const ContactSocialIcons = () => {
           rel="noopener noreferrer"
         >
           <IconComponent
-            iconPath="/assets/about/icon_linkedin_contact.svg"
+            iconPath="../../../assets/about/icon_linkedin_contact.svg"
             altText="linkedinIcon"
             style={styles}
           />
         </a>
         <a href="mailto:jessi.borda09@gmail.com">
           <IconComponent
-            iconPath="/assets/about/icon_gmail_contact.svg"
+            iconPath="../../../assets/about/icon_gmail_contact.svg"
             altText="gmailIcon"
             style={styles}
           />
@@ -93,7 +93,7 @@ const ContactSocialIcons = () => {
           rel="noopener noreferrer"
         >
           <IconComponent
-            iconPath="/assets/about/icon_instagram_contact.svg"
+            iconPath="../../../assets/about/icon_instagram_contact.svg"
             altText="instagramIcon"
             style={styles}
           />
@@ -104,7 +104,7 @@ const ContactSocialIcons = () => {
           rel="noopener noreferrer"
         >
           <IconComponent
-            iconPath="/assets/about/icon_facebook_contact.svg"
+            iconPath="../../../assets/about/icon_facebook_contact.svg"
             altText="facebookIcon"
             style={styles}
           />
