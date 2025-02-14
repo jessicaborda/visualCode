@@ -1,5 +1,5 @@
 import { FooterIcons } from './FooterIcons';
-import './footer.css';
+import './Footer.css'
 
 export const Footer = () => {
   return (
