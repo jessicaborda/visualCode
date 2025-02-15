@@ -11,7 +11,7 @@ export const DropDownMenu = () => {
 
   const dropDownItems = Object.keys(EXERCISES).map((key) => ({
     label: EXERCISES[key].name, // Usar el nombre del ejercicio
-    href: '/exercises' + EXERCISES[key].path, // Usar la ruta del ejercicio
+    href: '/visualCode/exercises' + EXERCISES[key].path, // Usar la ruta del ejercicio
   }));
 
   return (
